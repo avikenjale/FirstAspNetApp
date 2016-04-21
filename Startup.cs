@@ -32,14 +32,14 @@ namespace FirstAspNetApp
             loggerFactory.AddDebug();
 
             
-            // app.UseMvc(routes =>
-            // {
-            //     routes.MapRoute(
-            //         name: "default",
-            //         template: "{controller=Home}/{action=Index}/{id?}");
-            // });
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller}/{id?}");
+            });
             
-            app.UseMvc();
+            //app.UseMvc();
         }
         
         public static void Main (string[] args) => Microsoft.AspNet.Hosting.WebApplication.Run<Startup>(args);

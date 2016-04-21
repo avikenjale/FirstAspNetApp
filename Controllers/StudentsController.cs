@@ -12,8 +12,8 @@ namespace FirstAspNetApp.Controllers
             return new string[]{"Student 1","student 2"};
         }
         
-        [HttpGet]
-        public string Get(int id)
+        [HttpGet("{id}", Name = "GetOneStudent")]
+        public string GetStudent(int id)
         {
             return "Student 1";
         }
