@@ -1,0 +1,11 @@
+{
+    "properties":{
+        "IIS Express":{
+            "commandName":"IISExpress",
+            "launchUrl":"/api/students",
+            "environmentVariables":{
+                "ASPNET_ENV":"Development"
+            }
+        }
+    }
+}
