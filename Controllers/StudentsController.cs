@@ -11,5 +11,11 @@ namespace FirstAspNetApp.Controllers
         {
             return new string[]{"Student 1","student 2"};
         }
+        
+        [HttpGet]
+        public string Get(int id)
+        {
+            return "Student 1";
+        }
     }
 }
